@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Programing Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+        .carousel-img {
+    height: 400px;          /* or any size you want */
+    width: 100%;
+    object-fit: cover;      /* crop instead of stretch */
+    object-position: center; /* center the picture */
+    }
+    .card-body {
+    height: 200px; /* adjust */
+    }
+
+    </style>
+</head>
+<body style="background-color: #FFFFFF">
+    {% include "header.html" %}
+
+    <div class="container p-4 text-center">
+        <h1>Welcome to my portfolio webpage!</h1>
+    </div>
+
+    <hr style="border: 0; height: 2px; background-color: gray;">
+
+    <div class="container text-left"  >
+        <div class="row gy-3">
+        <p>This webpage contains introduction and various details to all my programing projects. My recent projects can be found on this
+        home page, list of my all projects can be found using navigation bar or on this <a href="projects_overview.html">link</a>.
+        </p>
+                <hr style="border: 0; height: 2px; background-color: gray;">
+        <p>On 13th of May 2026. I enrolled Udemy "100 Day of Code: Complete Python Pro Bootcamp". On day 82, Angle Yu course instructor, introduce
+        necessity to create programing portfolio to really become true developers, not just people that follow courses and detail instructions.
+        On Day 83 task was to create this kind of portfolio web page, and I felt I could expand idea to presents all my projects,
+        both programing and those of just cooking in my home IT lab in more detail.</p>
+        </div>
+    </div>
+
+    <hr style="border: 0; height: 2px; background-color: gray;">
+
+    <div class="container p-2">
+        <h2 style="text-align: center">My Latest projects</h2>
+        <div class="row align-items-center">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Morse code</h5>
+                    <p class="card-text">Small program for translation words to morse code and back.</p>
+                    <a href="#" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">My portfolio</h5>
+                    <p class="card-text">Webpage with description of all my projects, including my lab</p>
+                    <a href="#" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Morse code</h5>
+                    <p class="card-text">Small program for translation words to morse code and back.</p>
+                    <a href="#" class="btn btn-primary">See more</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
