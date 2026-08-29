@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Programing Portfolio</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body style="background-color: #1B1212; color: #FFFFFF">
+
 <nav class="navbar" style="background-color: #28282B;" >
   <div class="container-fluid d-flex justify-content-end border-bottom">
     <a class="navbar-brand" style="color: #00FFFF" href="{{ url_for('index') }}">Home</a>
@@ -6,3 +21,5 @@
 </nav>
 
 
+</body>
+</html>

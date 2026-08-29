@@ -1,0 +1,34 @@
+# TODO 1: create DB
+
+# TODO 2: fill DB with some data
+
+# TODO 3:
+
+
+
+
+--------------------------------------------------------------------
+        HERE I HAVE ALL MY THOUGHTS AND IDEAS FOR PROJECTS
+--------------------------------------------------------------------
+
+- create db which will contain following
+    - project title
+    - project short description
+    - project detail description
+    - project future vision and updates
+    - github link
+    - latest update (datetime)
+
+    - should db contain additional table with project pictures?
+    - should detail description be some special field (text area or something)
+
+- create separate py file which will be used for filling this db
+
+
+
+- build projects_overview.html with all contents from DB
+
+- build project.html with data for single record from DB
+
+
+- after completing 3 projects publish page
