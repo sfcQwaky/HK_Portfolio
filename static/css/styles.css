@@ -1,11 +1,40 @@
-<!-- colors #3368A0 #66A3BF #C8DFDB #F2EFE7 -->
-<!-- colors #00FFFF #000000 #FFFF00 #FFFFFF -->
+.carousel-img {
+            height: 400px; /* or any size you want */
+            width: 100%;
+            object-fit: cover; /* crop instead of stretch */
+            object-position: center; /* center the picture */
+        }
 
+        .card-body {
+            height: 200px; /* adjust */
+            background-color: #28282B;
+            color: #FFFFFF;
+        }
 
-:root {
-  --color-cyan: #00FFFF;
-  --color-black: #000000;
-  --color-yellow: #FFFF00;
-  --color-white: #FFFFFF;
-  --color-gray1: #D3D3D3;
-  --color-gray2: #A9A9A9;
+        .navbar-brand {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.5rem; /* adjust */
+            letter-spacing: 1px; /* optional */
+        }
+        .btn-primary {
+            background-color: #00FFFF !important; /* yellow */
+            color: #000000 !important;            /* black text */
+            border-color: #00FFFF !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #FFFF00;
+        }
+
+        body {
+            background-image: url("../img/hexagon_006.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        a {
+            color: #00FFFF; /* cyan */
+        }
+        a:hover {
+            color: #FFFF00; /* yellow */
+        }

@@ -10,6 +10,10 @@ def index():
 def projects():
     return render_template('projects_overview.html')
 
+@app.route('/project/<int:id')
+def single_projects():
+    return render_template('project.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
