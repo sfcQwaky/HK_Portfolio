@@ -1,9 +1,40 @@
 {% include "header.html" %}
 
-<div class="container temp-650">
+<div class="container-xl px-8 temp-650">
 
-    <p>This page will contain detail description for every project</p>
+    <h2>Project name: {{ project_data.title }}</h2>
 
+    <div class="container-xl py-4">
+
+            <div class="col-8">
+                <h5>Short overview:</h5>
+                <p>{{ project_data.short_desc }}</p>
+            </div>
+            <div class="col-12">
+                <h5>Detail project description:</h5>
+                {% for paragraph in project_data.detail_desc.split('\n\n') %}
+                    <p>{{ paragraph }}</p>
+                {% endfor %}
+            </div>
+
+    </div>
+
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-5">
+                <h5>Future vision/updates/upgrades:</h5>
+                <p>{{ project_data.future_vision }}</p>
+            </div>
+            <div class="col-4  offset-1">
+                <h5>GitHub link:</h5>
+                <a href="{{ project_data.github_link }}">{{ project_data.github_link }}</a>
+            </div>
+            <div class="col-2">
+                <h5>Latest update</h5>
+                <p>{{ project_data.latest_update }}</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% include "footer.html" %}

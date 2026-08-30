@@ -19,12 +19,14 @@ def index():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects_overview.html')
+    latest_projects = db.session.query(Record).order_by(Record.id)
+    tmp_projects = latest_projects.all()
+    return render_template('projects_overview.html', temp_projects=tmp_projects)
 
-# @app.route('/project/<int:project_id>')
-# def single_projects(project_id):
-#
-#    return render_template('project.html')
+@app.route('/project/<int:project_id>')
+def single_project(project_id):
+    selected_project = db.get_or_404(Record, project_id)
+    return render_template('project.html', project_data=selected_project)
 
 
 if __name__ == "__main__":

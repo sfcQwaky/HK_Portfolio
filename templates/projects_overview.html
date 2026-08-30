@@ -1,12 +1,25 @@
-    {% include 'header.html' %}
+{% include 'header.html' %}
 
-    <div class="container temp-650">
-    <p> This page will in the end contain list of all my projects</p>
-
+<div class="container temp-650">
+    {% for project in temp_projects %}
+    <div class="row py-4">
+        <div class="col-4 ">
+            <h5>Title: {{ project.title }}</h5>
+        </div>
+        <div class="col-6">
+            <p>Short overview: {{ project.short_desc }}</p>
+        </div>
+        <div class="col-2">
+            <a href="{{ url_for('single_project', project_id=project.id)}}" class="btn btn-primary">See more</a>
+        </div>
     </div>
-    {% include "footer.html" %}
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    {% endfor %}
+
+
+</div>
+{% include "footer.html" %}
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+></script>

@@ -1,6 +1,6 @@
-# TODO 1: create DB
+# TODO 1: links for home page projects
 
-# TODO 2: fill DB with some data
+# TODO 2: html for single project
 
 # TODO 3:
 

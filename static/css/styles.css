@@ -1,10 +1,3 @@
-.carousel-img {
-    height: 400px; /* or any size you want */
-    width: 100%;
-    object-fit: cover; /* crop instead of stretch */
-    object-position: center; /* center the picture */
-}
-
 .card-body {
     height: 200px; /* adjust */
     background-color: #28282B;
@@ -18,13 +11,16 @@
 }
 
 .btn-primary {
-    background-color: #00FFFF !important; /* yellow */
-    color: #000000 !important; /* black text */
+    background-color: #00FFFF !important;
+    color: #000000 !important;
     border-color: #00FFFF !important;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #FFFF00;
+    /* font-family: 'Anton', sans-serif; */
+    letter-spacing: 1px;
 }
 
 body {
@@ -43,5 +39,10 @@ a:hover {
 }
 
 .temp-650 {
-    min-height: 650px;
+    min-height: 750px;
+}
+
+.project-row{
+    border: 1px solid #00FFFF;
+    border-radius: 6px;
 }
